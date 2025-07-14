@@ -1,8 +1,11 @@
 #!/bin/bash
 set -e
 
-# Pull the Docker image from Docker Hub
+# Optional: Log in to Docker Hub (if private image)
+# echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+
+# Pull the image (optional)
 docker pull anurag850/simple-python-flask-app
 
-# Run the Docker image as a container
+# Run the container
 docker run -d -p 5000:5000 anurag850/simple-python-flask-app
