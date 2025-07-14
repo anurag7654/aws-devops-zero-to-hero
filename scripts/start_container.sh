@@ -8,4 +8,4 @@ set -e
 docker pull anurag850/simple-python-flask-app
 
 # Run the container
-docker run -d -p 5000:5000 anurag850/simple-python-flask-app
+docker run -d -p 8000:8000 anurag850/simple-python-flask-app
